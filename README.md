@@ -10,8 +10,7 @@ learning on the recorded runs, then exported to a TensorRT engine to run on the 
 
 **Stack:** PyTorch · Depth-Anything-V2 · transformers · imitation learning · TensorRT export
 
-> Heavy stuff (datasets, model weights, the venv) is gitignored — this repo is the code,
-> not the gigabytes.
+> Heavy stuff (datasets, model weights, the venv) is gitignored — this repo is the code.
 
 ## Part of the carbot project
 
