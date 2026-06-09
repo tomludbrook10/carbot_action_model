@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+.env/
+
+# Datasets & recorded runs (too big for git)
+data/
+processed_trajectories/
+model_rollouts/
+output/
+
+# Trained model weights / exported engines
+models/
+*.pth
+*.pt
+*.onnx
+*.engine
+*.bin
+*.mp4
+
+# Vendored upstream (keep as its own repo / submodule, not committed here)
+Depth-Anything-V2/
+
+# OS / editor
+.DS_Store
+.vscode/
