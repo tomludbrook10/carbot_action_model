@@ -4,9 +4,14 @@ The learning side of **carbot**, my self-driving RC car. I drove the car around 
 collecting camera footage + actions, then trained a neural net to look at the images and
 predict where to go next — and it learned to navigate around the house on its own.
 
-The model takes a short stack of recent camera frames (plus a depth map from a frozen
-Depth-Anything-V2) and predicts a path of upcoming waypoints. It's trained as imitation
-learning on the recorded runs, then exported to a TensorRT engine to run on the car.
+The final model trained via imitation learning. 
+- ResNet-style encoder embeds each observation, then we add sinusoidal embeddings.
+- Frozen Depth Anything V2 encodes the current observation into a depth embedding.
+- Take the embeddings and feed them into a Transformer block to "think" over the sequence of embeddings.
+- That output is then fed into the action head to predict the waypoints.
+
+We export the model via onix to run TensorRT on the jeston ori nano. 
+
 
 **Stack:** PyTorch · Depth-Anything-V2 · transformers · imitation learning · TensorRT export
 
