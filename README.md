@@ -8,7 +8,7 @@ The final model trained via imitation learning.
 - ResNet-style encoder embeds each observation, then we add sinusoidal embeddings.
 - Frozen Depth Anything V2 encodes the current observation into a depth embedding.
 - Take the embeddings and feed them into a Transformer block to "think" over the sequence of embeddings.
-- That output is then fed into the action head to predict the waypoints.
+- That output is then fed into the autoregressive action head to predict the waypoints.
 
 We export the model via onix to run TensorRT on the jeston ori nano. 
 
