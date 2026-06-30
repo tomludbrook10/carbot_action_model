@@ -13,7 +13,7 @@ The final model trained via imitation learning.
 We export the model via onix to run TensorRT on the jeston ori nano. 
 
 
-**Stack:** PyTorch · Depth-Anything-V2 · transformers · imitation learning · TensorRT export
+**Stack:** PyTorch · imitation learning
 
 > Heavy stuff (datasets, model weights, the venv) is gitignored — this repo is the code.
 
